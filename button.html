@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>click</title>
+        <link rel="stylesheet" href="./buttonclick.css">
+    </head>
+
+    <body>
+        <div class= "center">
+            <button id="button" onclick="myFunction">Click Me!</button>
+            <button id="crazy" onclick="crazyFunction">Go crazy!</button>
+        </div>
+        <script>
+            var colors = ["blue", "green", "gray", "yellow", "black", "red", "pink", "white"], // the color choices Blue, green, grey, yellow, black, red, pink, white
+                index = 0; // index of the current color
+                     // function changeColor(){
+                     // document.body.style.background=colors[index]
+            
+
+                
+             function changeColor() {
+             document.body.style.background = colors[index]; // set the color of body to the current color
+             index = (index + 1) % colors.length; // increment index to point to the next color 
+               }
+                document.getElementById("button").onclick = function () {
+                document.body.style.background = changeColor() 
+                document.getElementById("button").innerHTML = "CLICKED ME!"; 
+                }
+
+                document.getElementById("crazy").onclick = function() {
+                    document.body.style.background = changeColor()
+                    setInterval(changeColor, 3000);
+                    document.getElementById("crazy").innerHTML = "GO CRAZY!";
+                }
+        </script>
+    </body>
+</html>

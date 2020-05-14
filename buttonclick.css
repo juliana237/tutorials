@@ -1,0 +1,43 @@
+h1 {
+    text-align: center
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: green;
+  }
+
+#crazy {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+#crazy:hover {
+    background-color: rgb(17, 14, 8);
+  }
